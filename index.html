@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ValleRoute – Transporte Universitario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <img src="Logo.jpg" alt="ValleRoute" class="logo">
+    <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#que-es">Qué es</a></li>
+        <li><a href="#caracteristicas">Características</a></li>
+        <li><a href="#app">App Móvil</a></li>
+        <li><a href="#recursos">Recursos</a></li>
+        <li><a href="#equipo">Equipo</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>ValleRoute</h1>
+        <p>"Tu ruta, tu tiempo, tu seguridad"</p>
+        <div class="hero-buttons">
+            <a href="#que-es" class="btn btn-primary">Descubrir más</a>
+            <a href="#app" class="btn btn-secondary">Ver la App</a>
+        </div>
+    </div>
+</section>
+
+<section id="que-es" class="section section-light fade">
+    <div class="section-header">
+        <div class="section-badge">Innovación</div>
+        <h2>¿Qué es ValleRoute?</h2>
+        <p>Sistema integrado que revoluciona el transporte universitario con tecnología moderna, conectando estudiantes, conductores y administradores en una plataforma unificada.</p>
+    </div>
+</section>
+
+<section id="caracteristicas" class="section section-white fade">
+    <div class="section-header">
+        <div class="section-badge">Funcionalidades</div>
+        <h2>Características Principales</h2>
+    </div>
+    
+    <div class="card-grid">
+        <div class="card fade">
+            <div class="card-icon">🗺️</div>
+            <h3>Rutas Digitales</h3>
+            <p>Consulta horarios, paradas y disponibilidad en tiempo real desde tu móvil.</p>
+        </div>
+        
+        <div class="card fade">
+            <div class="card-icon">📱</div>
+            <h3>Ticket QR</h3>
+            <p>Acceso rápido al bus mediante validación de código QR, sin papeles ni complicaciones.</p>
+        </div>
+        
+        <div class="card fade">
+            <div class="card-icon">🚀</div>
+            <h3>App Unificada</h3>
+            <p>Una sola aplicación para estudiantes y conductores, diseñada para ser simple y eficiente.</p>
+        </div>
+        
+        <div class="card fade">
+            <div class="card-icon">⚙️</div>
+            <h3>Panel Admin</h3>
+            <p>Control total de buses, rutas, usuarios e incidentes desde la plataforma web.</p>
+        </div>
+    </div>
+</section>
+
+<section id="app" class="section showcase section-light fade">
+    <div class="section-header">
+        <div class="section-badge">Mobile First</div>
+        <h2>App Móvil ValleRoute</h2>
+        <p>Diseñada con tecnología moderna para una experiencia fluida</p>
+    </div>
+    
+    <div class="app-container">
+        <div class="showcase-content fade">
+            <h3>Funcionalidades Destacadas</h3>
+            <ul>
+                <li>Reservas digitales instantáneas</li>
+                <li>Tickets QR para validación rápida</li>
+                <li>Control de pasajeros en tiempo real</li>
+                <li>Registro de incidentes y reportes</li>
+                <li>Visualización de rutas y horarios</li>
+                <li>Sistema de calificaciones</li>
+            </ul>
+        </div>
+        
+        <div class="app-qr-box fade">
+            <h3>Descarga la App</h3>
+            <div class="qr-placeholder">
+                <p>QR Code</p>
+            </div>
+            <p class="qr-description">Escanea el código QR para descargar ValleRoute</p>
+        </div>
+    </div>
+</section>
+
+<section id="recursos" class="section qr-section fade">
+    <div class="section-header">
+        <div class="section-badge badge-white">Explora</div>
+        <h2 class="title-white">Recursos del Proyecto</h2>
+        <p class="text-white">Descubre más sobre ValleRoute a través de nuestros recursos digitales</p>
+    </div>
+    
+    <div class="qr-grid">
+        <div class="qr-box fade">
+            <h3>Video Promocional</h3>
+            <div class="qr-placeholder">
+                <p>QR Code</p>
+            </div>
+        </div>
+        
+        <div class="qr-box fade">
+            <h3>Diagramas del Proyecto</h3>
+            <div class="qr-placeholder">
+                <img src="image.png" alt="QR Diagramas">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="equipo" class="section section-white fade">
+    <div class="section-header">
+        <div class="section-badge">Los Pythones</div>
+        <h2>Equipo Desarrollador</h2>
+        <p>Estudiantes apasionados por la tecnología y la innovación</p>
+    </div>
+    
+    <div class="team-grid">
+        <div class="team-card fade">Alejandro Romero</div>
+        <div class="team-card fade">Franco Avaro</div>
+        <div class="team-card fade">Ian Romero</div>
+        <div class="team-card fade">Ignacio Urjel</div>
+    </div>
+</section>
+
+<footer class="footer fade">
+    <p>© 2025 ValleRoute · Proyecto Académico · Los Pythones</p>
+    <p style="margin-top: 10px; opacity: 0.7;">Transformando el transporte universitario con tecnología</p>
+</footer>
+
+<script>
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+
+menuToggle?.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    menuToggle.classList.toggle('active');
+});
+
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        const navHeight = 80;
+        window.scrollTo({
+            top: target.offsetTop - navHeight,
+            behavior: 'smooth'
+        });
+        navLinks.classList.remove('active');
+        menuToggle.classList.remove('active');
+    });
+});
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+    });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade').forEach(el => observer.observe(el));
+
+window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+</script>
+
+</body>
+</html>
